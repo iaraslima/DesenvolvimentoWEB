@@ -1,7 +1,7 @@
 const HelloWorld = () =>
     <div>
         <h2>
-            Jefferson de Carvalho
+            Iara
         </h2>
     </div>
 

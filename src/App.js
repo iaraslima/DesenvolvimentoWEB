@@ -2,8 +2,8 @@
 // import HelloWorld from "./components/01HelloWorld/HelloWord";
 // import FuncoesInternas from "./components/02FuncoesInternas/FunçõesInternas";
 // import Loja from "./components/03Props/Loja";
-//import MeusDados from "./components/atividade00/02MeusDados";
-//import Temperatura from "./components/atividade00/03Temperatura";
+//import MeusDados from "./components/atividade00ExEmSala/02MeusDados";
+//import Temperatura from "./components/atividade00ExEmSala/03Temperatura";
 //import SistemaSolar from "./components/04Children/SistemaSolar"
 //import ComPai from "./components/05ComPaiEFilho/ComPai";
 //import Estado from "./components/06Estados/Estado";
