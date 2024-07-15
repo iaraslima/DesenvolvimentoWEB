@@ -20,14 +20,22 @@
 // import FuncaoB from "./components/atividade02/questão01/FuncaoB";
 //import FuncaoA from "./components/atividade02/questão01/FuncaoA";
 //import ComponenteAvo from "./components/atividade02/questão02/ComponenteAvo";
-import ComponenteAvo from "./components/atividade02/questão03/ComponenteAvo";
-
+//import ComponenteAvo from "./components/atividade02/questão03/ComponenteAvo";
+import CovidAxios from "./components/12Axios/CovidAxios";
 
 function App(){
-    return (
-        <ComponenteAvo/>
-    );
+    return(
+        <div>
+            <CovidAxios />
+        </div>
+    )
 }
+
+// function App(){
+//     return (
+//         <ComponenteAvo/>
+//     );
+// }
 
  // function App() {
  //   return (
