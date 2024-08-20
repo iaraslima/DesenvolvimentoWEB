@@ -1,4 +1,5 @@
-import "../css/crud.css"
+import ProfessorService from "../../services/ProfessorServices"
+import "../../css/crud.css"
 
 import { useState } from "react"
 
@@ -7,7 +8,16 @@ const Criar = () => {
     const [nome, setNome] = useState("")
     const [curso, setCurso] = useState("")
     const [titulacao, setTitulacao] = useState("MESTRADO")
-    const [ai, setAi] = useState({es:false, lc:false, mc:false}) //área de interesse
+    const [ai, setAi] = useState({es:false, lc:false, mc:false}) //ai = área de interesse
+    const [universidade, setUniversidade] = useState({ufc:false,ifce:false})
+
+    const handleRadio = (event) => {
+        const reset = {ufc:false,ifce:false}
+        setUniversidade({
+            ...reset,
+            [event.target.value]:event.target.checked
+        })
+    }
 
 
     const handleCheckbox = (event) => {
@@ -33,13 +43,22 @@ const Criar = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        alert("Nome: " + nome + "\nCurso: " + curso + " \nTitulacao: " + titulacao)
+        //alert("Nome: " + nome + "\nCurso: " + curso + " \nTitulacao: " + titulacao)
+        const novoProfessor = {nome,curso,titulacao,ai,universidade}
+        //postProfessorAxiosThenCatch(novoProfessor)
+        //postProfessorFetchThenCatch(novoProfessor)
+        ProfessorService.postProfessorAxiosThenCatch(
+            novoProfessor,
+            (data) => {
+                console.log(data)
+            }
+        )
+
     }
 
     return (
         <div className="page-content">
             <h1>Criar Professor</h1>
-            <h4>{JSON.stringify(ai)}</h4>
             <form className="form-content" onSubmit={handleSubmit}>
 
                 <div className="mb-3">
@@ -132,6 +151,47 @@ const Criar = () => {
                     </fieldset>
                 </div>
 
+                <div>
+                    <label className="form-label">Universidade de Origem</label>
+                    <fieldset className="scheduler-border">
+                        <div className="form-check">
+                            <input
+                                id="idUFC"
+                                className="form-check-input"
+                                type="radio"
+                                name="universidade"
+                                checked={universidade.ufc}
+                                value="ufc"
+                                onChange={handleRadio}
+                            />
+                            <label
+                                htmlFor="idUFC"
+                                className="form-check-label"
+                            >
+                                Universidade Federal do Ceará
+                            </label>
+                        </div>
+
+                        <div className="form-check">
+                            <input
+                                id="idIFCE"
+                                className="form-check-input"
+                                type="radio"
+                                name="universidade"
+                                checked={universidade.ifce}
+                                value="ifce"
+                                onChange={handleRadio}
+                            />
+                            <label
+                                htmlFor="idIFCE"
+                                className="form-check-label"
+                            >
+                                Instituto Federal do Ceará
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
                 <div className="div-button-submit">
                     <button
                         type="submit"
@@ -148,4 +208,4 @@ const Criar = () => {
     )
 }
 
-export default Criar
+export { Criar }

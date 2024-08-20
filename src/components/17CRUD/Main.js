@@ -1,46 +1,37 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from './Home';
+import Home from "./components/Home";
+import {Criar} from "./components/professor/Criar";
+import Listar from "./components/professor/Listar";
+import Editar from "./components/professor/Editar";
 
-import CriarAluno from './aluno/Criar';
-import ListarAluno from "./aluno/Listar";
-import Criar from './professor/Criar';
-import Listar from "./professor/Listar";
-import Editar from "./professor/Editar";
+const router = createBrowserRouter(
+    [
+        {
+            path:"/",
+            element: <Home />,
+            children: [
+                {
+                    path:"professor/listar",
+                    element:<Listar />
+                },
+                {
+                    path:"professor/criar",
+                    element:<Criar />
+                },
+                {
+                    path:"professor/editar",
+                    element:<Editar />
+                }
+            ]
+        }
+    ]
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home />,
-        children: [
-            {
-                path: "professor/listar",
-                element: <Listar />,
-            },
-            {
-                path: "professor/editar",
-                element: <Editar />,
-            },
-            {
-                path: "professor/criar",
-                element: <Criar />,
-            },
-            {
-                path: "aluno/criar",
-                element: <CriarAluno/>,
-            },
-            {
-                path: "aluno/listar",
-                element: <ListarAluno/>,
-            }
-        ]
-    },
-])
+)
 
 const Main = () => {
     return (
-        <RouterProvider router={router} />
+        <RouterProvider router={router}/>
     )
 }
-
 export default Main
