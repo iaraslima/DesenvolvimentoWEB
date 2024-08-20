@@ -6,6 +6,7 @@ import Listar from "./components/professor/Listar";
 import Editar from "./components/professor/Editar";
 
 const router = createBrowserRouter(
+
     [
         {
             path:"/",
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
             ]
         }
     ]
+
 
 )
 
