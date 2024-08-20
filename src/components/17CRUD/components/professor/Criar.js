@@ -12,11 +12,13 @@ const Criar = () => {
     const [universidade, setUniversidade] = useState({ufc:false,ifce:false})
 
     const handleRadio = (event) => {
+
         const reset = {ufc:false,ifce:false}
         setUniversidade({
             ...reset,
             [event.target.value]:event.target.checked
         })
+
     }
 
 

@@ -1,4 +1,5 @@
 {
+
   "professores": [
     {
       "nome": "Wladimir Tavares",
@@ -61,5 +62,6 @@
       "id": 4
     }
   ],
-  "alunos": []
+  "alunos": [],
+
 }

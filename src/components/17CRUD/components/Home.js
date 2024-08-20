@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.bundle.js"
-
-
 import { Outlet, Link } from "react-router-dom";
+
 
 const Home = () => {
     return (

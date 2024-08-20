@@ -3,5 +3,4 @@ const Editar = () => {
         <h1>Editar Professor</h1>
     )
 }
-
 export default Editar

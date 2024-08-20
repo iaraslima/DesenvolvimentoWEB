@@ -1,6 +1,5 @@
 import "../../css/crud.css"
 import ProfessorService from "../../services/ProfessorServices";
-
 import { useEffect, useState } from "react"
 
 const Listar = () => {
