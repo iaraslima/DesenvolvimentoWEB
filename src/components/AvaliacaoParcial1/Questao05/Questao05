@@ -1,5 +1,6 @@
 5) Explique como o uso de Contextos pode resolver o problema de PROPS DRILLING.
 
+
 Contextos ajudam a resolver tal problema ao permitir o compartilhamento de dados entre componentes
 sem que seja necessário passar as informações de forma manual por meio de cada nível intermediário
 da árvore de componentes: ao invés de passar props de pai para filho, há a alternativa de usar o Contexto
