@@ -17,6 +17,7 @@ const Principal = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 Data: 21/08/2024</h3>
+            <hr />
             <h5>Questão 1</h5>
             <Questao01A/>
             <hr/>
