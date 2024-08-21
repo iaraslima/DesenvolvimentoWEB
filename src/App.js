@@ -28,12 +28,13 @@
 //import Main from "./components/17CRUD/Main";
 //import Main from "./components/18CRUD_JSON/Main";
 //import MyNavbar from "./components/16Bootstrap/MyNavbar";
+//import Main from "./components/17CRUD/Main";
 
-import Main from "./components/17CRUD/Main";
+import Principal from "./components/AvaliacaoParcial1/Principal"
 
 function App() {
     return (
-        <Main />
+        <Principal />
     )
 }
 
