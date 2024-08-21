@@ -11,7 +11,6 @@ const Questao2 = () => {
 
     return (
         <div>
-
             <div>
                 {girar ? (
                     <img
