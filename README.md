@@ -1,4 +1,5 @@
-# Códigos desenvolvidos durante a disciplina de Desenvolvimento de Software para WEB 👩🏻‍💻
+# Desenvolvimento de Software para WEB 👩🏻‍💻
+Códigos desenvolvidos durante a disciplina.
 
 ## Avaliação Parcial 1 📝💻
 
