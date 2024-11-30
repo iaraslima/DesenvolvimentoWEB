@@ -7,7 +7,12 @@ Link: [AP1](https://github.com/iaraslima/DesenvolvimentoWEB/tree/master/src/comp
 
 ## Avaliação Parcial 2 📝💻
 
-Prova realizada em dupla, onde contei com a contribuição de [Felipe](https://github.com/fixlipw)
+[Prova](https://github.com/fixlipw/provas_web/tree/master/frontend/src/components/Prova02/CRUD) realizada em dupla, onde contei com a contribuição de [Felipe](https://github.com/fixlipw)
 
+## TechnoHub
+Trabalho Final da disciplina
 
-Link: [AP2](https://github.com/fixlipw/provas_web/tree/master/frontend/src/components/Prova02/CRUD)
+Membros da equipe: [Iara](https://github.com/iaraslima), [Felipe](https://github.com/fixlipw), [Hermeson](https://github.com/hermesonbastos), [Mariana Pereira](https://github.com/Mariana-Pereiraa) e [Mariana Oliveira](https://github.com/MarianaOliveiraFelipe)
+
+[Front-end](https://github.com/hermesonbastos/PROJETO_WEB)
+[API](https://github.com/hermesonbastos/technohub_api)
