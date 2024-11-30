@@ -15,4 +15,5 @@ Trabalho Final da disciplina
 Membros da equipe: [Iara](https://github.com/iaraslima), [Felipe](https://github.com/fixlipw), [Hermeson](https://github.com/hermesonbastos), [Mariana Pereira](https://github.com/Mariana-Pereiraa) e [Mariana Oliveira](https://github.com/MarianaOliveiraFelipe)
 
 [Front-end](https://github.com/hermesonbastos/PROJETO_WEB)
+
 [API](https://github.com/hermesonbastos/technohub_api)
